@@ -1,0 +1,44 @@
+{
+  "name": "@javilobo8/zoso-loader",
+  "version": "0.0.1",
+  "private": false,
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish-patch": "np patch --no-release-draft --no-2fa",
+    "publish-minor": "np minor --no-release-draft --no-2fa",
+    "publish-major": "np major --no-release-draft --no-2fa",
+    "publish-prerelease": "np prerelease --tag beta --yolo --no-release-draft --no-2fa",
+    "prepublish": "npm run build",
+    "test": "echo 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javilobo8/zoso-loader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javilobo8/zoso-loader/issues"
+  },
+  "homepage": "https://github.com/javilobo8/zoso-loader#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^18.11.17",
+    "typescript": "^4.9.4"
+  }
+}
