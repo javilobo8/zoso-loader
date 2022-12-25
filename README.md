@@ -13,7 +13,7 @@ TypeScript
 import zosoLoader from '@javilobo8/zoso-loader';
 import yaml from 'js-yaml';
 
-const configString = billieLoader.loadConfig({
+const configString = zosoLoader.loadConfig({
   configPath: '/opt/config',
   file: 'servicetesting-api',
   type: 'yml',
